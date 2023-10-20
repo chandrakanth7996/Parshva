@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create DOCKET</title>
+</head>
+<body>
+    <h1>Create a DOCKET</h1>
+    <form action="process_docket.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label for="start_time">Start Time:</label>
+        <input type="datetime-local" name="start_time" required><br><br>
+
+        <label for="end_time">End Time:</label>
+        <input type="datetime-local" name="end_time" required><br><br>
+
+        <label for="hours_worked">No. of Hours Worked:</label>
+        <input type="number" name="hours_worked" required><br><br>
+
+        <label for="rate_per_hour">Rate per Hour:</label>
+        <input type="number" step="0.01" name="rate_per_hour" required><br><br>
+
+        <label for="supplier_name">Supplier Name:</label>
+        <input type="text" name="supplier_name" required><br><br>
+
+        <label for="purchase_order">Purchase Order:</label>
+        <select name="purchase_order" required>
+            <!-- You can dynamically populate the options using data from your CSV -->
+            <option value="PO-001">PO-001</option>
+            <option value="PO-002">PO-002</option>
+            <!-- Add more options as needed -->
+        </select><br><br>
+
+        <input type="submit" value="Create DOCKET">
+    </form>
+</body>
+</html>
